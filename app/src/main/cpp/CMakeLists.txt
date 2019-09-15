@@ -17,7 +17,9 @@ add_library( # Sets the name of the library.
         SHARED
 
         # Provides a relative path to your source file(s).
-        native-lib.cpp)
+        native-lib.cpp
+
+        egl/CyEglHelper.cpp)
 
 #
 
@@ -27,4 +29,4 @@ target_link_libraries( # Specifies the target library.
         GLESv2
         android
 
-        ${log-lib})
+        log)
